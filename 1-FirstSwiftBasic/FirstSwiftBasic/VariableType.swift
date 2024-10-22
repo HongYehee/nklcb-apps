@@ -4,8 +4,21 @@
 import SwiftUI
 
 struct VariableType: View {
+    
+    var name: String = "Ray"
+    var age: Int = 24
+    var height: Float = 162.3
+    var weight: Double = 49.9
+    var havePet: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("\(name)")
+            Text("\(age)")
+            Text("\(height)")
+            Text("\(weight)")
+            Text("\(havePet.description)")
+        }
     }
 }
 
