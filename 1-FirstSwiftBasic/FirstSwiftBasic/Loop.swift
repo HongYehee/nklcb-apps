@@ -1,15 +1,18 @@
-//
 //  Loop.swift
 //  FirstSwiftBasic
-//
-//  Created by 홍예희 on 10/23/24.
-//
 
 import SwiftUI
 
 struct Loop: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        let names: [String] = ["리이오", "리이사", "춘리", "올리브", "바미", "나리"]
+        
+        VStack {
+            ForEach(names, id: \.self) { item in
+                Text(item)
+            }
+        }
     }
 }
 

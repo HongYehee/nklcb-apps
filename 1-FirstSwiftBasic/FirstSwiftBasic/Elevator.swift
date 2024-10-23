@@ -1,17 +1,47 @@
-//
 //  Elevator.swift
 //  FirstSwiftBasic
-//
-//  Created by 홍예희 on 10/23/24.
-//
 
 import SwiftUI
 
 struct Elevator: View {
+    
+    @State var myElevator = ElevatorStruct()
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("층수 : \(myElevator.level)")
+            
+            HStack {
+                Button {
+                    myElevator.goDown()
+                } label: {
+                    Text("아래로")
+                }
+                
+                Button {
+                    myElevator.goUp()
+                } label: {
+                    Text("위로")
+                }
+            }
+        }
     }
 }
+
+
+struct ElevatorStruct {
+    var level: Int = 1
+    
+    mutating func goDown() {
+        level = level - 1
+    }
+    
+    mutating func goUp() {
+        level = level + 1
+    }
+}
+
 
 #Preview {
     Elevator()
