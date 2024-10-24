@@ -1,15 +1,25 @@
-//
 //  Nil.swift
 //  FirstSwiftBasic
-//
-//  Created by 홍예희 on 10/24/24.
-//
 
 import SwiftUI
 
 struct Nil: View {
+    
+    var name: String = "Leeo"
+    var petName: String?
+    
+    var bami: String = "Bami"
+    var petName2: String = "coco"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("이름은 \(name), 펫 네임은 \(petName)입니다.")
+            Text("이름은 \(bami), 펫 네임은 \(petName2)입니다.")
+        }
+        .onAppear {
+            print("이름은 \(name), 펫 네임은 \(petName)입니다.")
+            print("이름은 \(bami), 펫 네임은 \(petName2)입니다.")
+        }
     }
 }
 
