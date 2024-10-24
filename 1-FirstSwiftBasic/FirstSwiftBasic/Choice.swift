@@ -17,14 +17,14 @@ struct Choice: View {
 }
 
 
-enum Direction: String {
-    case east = "동"
-    case west = "서"
-    case south = "남"
-    case north = "북"
-    case myWay
-    case back
-}
+//enum Direction: String {
+//    case east = "동"
+//    case west = "서"
+//    case south = "남"
+//    case north = "북"
+//    case myWay
+//    case back
+//}
 
 
 enum Member {
