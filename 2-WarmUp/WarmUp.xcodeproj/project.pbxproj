@@ -10,9 +10,23 @@
 		8D2140B92CCF2A5B00B4614B /* WarmUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarmUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8DF8930D2CCFAAA900A2B2CE /* Exceptions for "WarmUp" folder in "WarmUp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				01/Onboarding.swift,
+				03/MyApp/OnboardingSample.swift,
+			);
+			target = 8D2140B82CCF2A5B00B4614B /* WarmUp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		8D2140BB2CCF2A5B00B4614B /* WarmUp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8DF8930D2CCFAAA900A2B2CE /* Exceptions for "WarmUp" folder in "WarmUp" target */,
+			);
 			path = WarmUp;
 			sourceTree = "<group>";
 		};
